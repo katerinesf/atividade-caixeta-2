@@ -1,19 +1,56 @@
-/* css musicas */
+/* css grid e flex musicas */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    padding: 20px;
+    background-color: #db7676;
+    padding-top: 80px;
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    padding-top: 20px;
 }
+/*Header*/
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: all 0.3s;
+    font-weight: 700;
+}
+
+header nav a:hover {
+    color: rgb(136, 21, 21);
+}
+
+/*Style*/
 
 .Cantores {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
+    padding: 40%;
+    padding-top: 20px;
 }
 
 .musica {
